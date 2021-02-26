@@ -1,7 +1,9 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
+  <div id="nav" class="flex space-x-6 justify-center">
+    <router-link to="/form">Form</router-link>|
+    <router-link to="/">Home</router-link>|
     <router-link to="/about">About</router-link>
+
   </div>
   <router-view />
 </template>
