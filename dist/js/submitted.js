@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["submitted"],{"1f7e":function(t,e,n){"use strict";n.r(e);var c=n("7a23");function s(t,e){return Object(c["p"])(),Object(c["d"])("div",null," test ")}const u={};u.render=s;e["default"]=u}}]);
+//# sourceMappingURL=submitted.js.map

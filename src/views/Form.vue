@@ -3,7 +3,7 @@
     <form
       class="p-2 text-gray-800 flex flex-col "
       method="post"
-      action="/submitted"
+      action="/submitted.php"
       @submit.prevent="onSubmit"
     >
       <div class="flex flex-row mb-4 w-full max-w-sm border-b border-gray-50">
@@ -174,15 +174,15 @@ export default {
   methods: {
     ...mapActions({
       onSubmit: "onSubmit"
-    }),
-    sonSubmit() {
-      console.log(this.form.name);
-      console.log("email:" + this.form.email);
-      // console.log("Form has been submitted!");
-      this.form.post("/submitted").then(response => console.log(response));
+    })
+    // sonSubmit() {
+    //   console.log(this.form.name);
+    //   console.log("email:" + this.form.email);
+    //   // console.log("Form has been submitted!");
+    //   // this.form.post("/submitted").then(response => console.log(response));
 
-      // this.form.get("/submitted").then(() => console.log("success"));
-    }
+    //   // this.form.get("/submitted").then(() => console.log("success"));
+    // }
   }
 };
 </script>
