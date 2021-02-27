@@ -25,9 +25,13 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 #   Commands to install all the dependencies
 ```
-npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
-npx tailwindcss init -p
-touch postcss.config.js
+//Install vue
+  vue create vue-axios-form
+//Install Tailwind
+ npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+ npx tailwindcss init -p
+ touch postcss.config.js
+//add the following lines of code
 module.exports = {
   plugins: {
     tailwindcss: {},
@@ -35,7 +39,7 @@ module.exports = {
   },
 }
 touch src/assets/styles/index.css
-add the following lines
+//add the following lines of code
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -51,7 +55,9 @@ npm uninstall tailwindcss postcss autoprefixer
 npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat @tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
 ```
 **check if some of tailwind commands are working**
-
+```
+npm install axios --save
+```
 
 
 
