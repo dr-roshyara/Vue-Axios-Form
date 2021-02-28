@@ -40,16 +40,6 @@ export default createStore({
       state.form.email = email;
     }
   },
-  actions: {
-    onSubmit({ state }) {
-      console.log(state.form.name);
-      console.log("email:" + state.form.email);
-      // console.log("Form has been submitted!");
-      state.form.post("./submitted.php").then(response => {
-        console.log(response);
-        alert(response);
-      });
-    }
-  },
+  actions: {},
   modules: {}
 });

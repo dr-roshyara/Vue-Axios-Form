@@ -103,17 +103,19 @@
   </div>
 </template>
 <script>
-import store, { mapGetters, mapActions } from "vuex";
+import store, { mapGetters } from "vuex";
 export default {
   data() {
     return {
-      store
+      store,
+      url: "submitted.php"
     };
   },
   computed: {
     ...mapGetters({
       form: "getForm"
     }),
+
     name: {
       get() {
         return this.$store.state.form.name;
@@ -172,17 +174,9 @@ export default {
     }
   },
   methods: {
-    ...mapActions({
-      onSubmit: "onSubmit"
-    })
-    // sonSubmit() {
-    //   console.log(this.form.name);
-    //   console.log("email:" + this.form.email);
-    //   // console.log("Form has been submitted!");
-    //   // this.form.post("/submitted").then(response => console.log(response));
-
-    //   // this.form.get("/submitted").then(() => console.log("success"));
-    // }
+    onSubmit() {
+      this.form.post(this.url);
+    }
   }
-};
+}
 </script>
